@@ -6,12 +6,12 @@ package com.tfalmd.theroadsofar.finale.choosewisely.model;
 public class Hero {
     private String name;
     private int id;
-    private int has_id;
+    private int hasId;
 
-    public Hero(int id, String name, int has_id) {
+    public Hero(int id, String name, int hasId) {
         this.id = id;
         this.name = name;
-        this.has_id = has_id;
+        this.hasId = hasId;
     }
 
     public String getName() {
@@ -30,11 +30,11 @@ public class Hero {
         this.id = id;
     }
 
-    public int getHas_id() {
-        return has_id;
+    public int getHasId() {
+        return hasId;
     }
 
-    public void setHas_id(int has_id) {
-        this.has_id = has_id;
+    public void setHasId(int hasId) {
+        this.hasId = hasId;
     }
 }
