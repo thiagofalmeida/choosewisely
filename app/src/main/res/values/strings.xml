@@ -1,6 +1,37 @@
 <resources>
-    <string name="app_name">ChooseWisely</string>
+    <string name="app_name">Choose Wisely</string>
+    <string name="title_activity_about">Como chegamos até aqui</string>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <!-- menu -->
+    <string name="action_register">Entre para a história</string>
+    <string name="action_about">Sobre</string>
+
+    <!-- main activity -->
+    <string name="choose">Descubra seu poder</string>
+    <string name="yourpower">Seu poder é: Escolher com sabedoria</string>
+    <string name="advantage">Vantagem</string>
+    <string name="disadvantage">Desvantagem</string>
+    <string name="adv_txt">Dificilmente tomara uma decisão errada</string>
+    <string name="dis_txt">Deve existir alguma desvantagem nisso</string>
+
+    <!-- dialog -->
+    <string name="dialog_name">Nome:</string>
+    <string name="dialog_lastname">Sobrenome:</string>
+    <string name="dialog_ok">Salvar</string>
+    <string name="dialog_cancel">Cancelar</string>
+    <string name="dialog_title">Cadastro de (Futuro) Super-Heroi</string>
+
+    <!-- about activity -->
+    <string name="about_title">Sobre o aplicativo</string>
+    <string name="about_content">
+        O aplicativo Choose Wisely, foi descoberto durante uma viagem para uma dimensão paralela, feita por 5 cientistas.
+        Durante essa viagem o app, se auto instalou no smartphone dos integrantes concedendo a eles habilidades incriveis.
+        Infelizmente apenas 4 deles utilizaram dessas habilidades para o bem, o que fez eles serem conhecidos como Quarteto Fantastico
+        (sim o 5 integrante acabou virando o supervilão Dr. Destino ;s).
+    </string>
+    <string name="about_end">Por isso siga o conselho do Grail Knight é ESCOLHA COM SABEDORIA.</string>
+
+    <!-- adapter -->
+    <string name="adapter_name">Thiago Almeida</string>
+    <string name="adapter_power">Adapter Power</string>
 </resources>
