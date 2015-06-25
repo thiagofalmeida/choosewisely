@@ -37,4 +37,13 @@ public class Hero {
     public void setHasId(int hasId) {
         this.hasId = hasId;
     }
+
+    @Override
+    public String toString() {
+        return "Hero{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", hasId=" + hasId +
+                '}';
+    }
 }

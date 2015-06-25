@@ -25,6 +25,38 @@ public class HeroDao extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("CREATE TABLE heroes (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, hasId INT)");
+        db.execSQL("CREATE TABLE powers (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, advantage TEXT, disadvantage TEXT, utility INT, imageFile TEXT)");
+
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'tecnocinese.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'hidrocinese.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'gordura.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'alone.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'pirocinese.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'absorcao.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'aderencia.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'botao.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'choroacido.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'fatorcura.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'flatulencia.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'gerarcampo.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'gritosuper.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'ilusionismo.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'insanidade.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'intangibilidade.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'invisibilidade.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'levitardireito.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'velocidade.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'pretrificacao.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'raioxeterno.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'superforca.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'teletransporte.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'toquedamorte.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'transmutacao.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'vijardimensoes.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'visaoderaiox.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'voar.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'telepatia.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnocinese', 'vantagem', 'tela azul', 3, 'magica.png')");
     }
 
     @Override

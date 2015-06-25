@@ -26,12 +26,21 @@
     <string name="about_content">
         O aplicativo Choose Wisely, foi descoberto durante uma viagem para uma dimensão paralela, feita por 5 cientistas.
         Durante essa viagem o app, se auto instalou no smartphone dos integrantes concedendo a eles habilidades incriveis.
-        Infelizmente apenas 4 deles utilizaram dessas habilidades para o bem, o que fez eles serem conhecidos como Quarteto Fantastico
-        (sim o 5 integrante acabou virando o supervilão Dr. Destino ;s).
+        Infelizmente apenas 4 deles utilizaram dessas habilidades para o bem, mais tarde eles passaram a serem conhecidos como Quarteto Fantastico
+        (sim o 5 integrante acabou virando o supervilão Dr. Destino).
     </string>
     <string name="about_end">Por isso siga o conselho do Grail Knight é ESCOLHA COM SABEDORIA.</string>
 
     <!-- adapter -->
     <string name="adapter_name">Thiago Almeida</string>
     <string name="adapter_power">Adapter Power</string>
+    <string name="title_activity_log_in">LogInActivity</string>
+
+    <!-- login activity -->
+    <string name="login">Choose Wisely</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_name">Nome:</string>
+    <string name="login_button">Começar</string>
+
+[
 </resources>

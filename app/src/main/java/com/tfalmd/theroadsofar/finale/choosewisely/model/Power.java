@@ -67,4 +67,16 @@ public class Power {
     public void setImageFile(String imageFile) {
         this.imageFile = imageFile;
     }
+
+    @Override
+    public String toString() {
+        return "Power{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", advantage='" + advantage + '\'' +
+                ", disadvantage='" + disadvantage + '\'' +
+                ", utility=" + utility +
+                ", imageFile='" + imageFile + '\'' +
+                '}';
+    }
 }
