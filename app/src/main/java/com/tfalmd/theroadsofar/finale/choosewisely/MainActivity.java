@@ -44,6 +44,11 @@ public class MainActivity extends ActionBarActivity implements RegisterDialog.Re
 
                 Collections.shuffle(powers);
 
+                Bundle extras = getIntent().getExtras();
+
+                Hero h = hd.find(extras.getString("user"));
+                h.setHasId(powers.get(0).getId());
+
                 TextView name = (TextView) findViewById(R.id.tvPower);
                 TextView adv = (TextView) findViewById(R.id.tvAdvT);
                 TextView dis = (TextView) findViewById(R.id.tvDisT);

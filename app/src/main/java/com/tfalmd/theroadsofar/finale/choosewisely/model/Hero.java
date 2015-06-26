@@ -14,6 +14,8 @@ public class Hero {
         this.hasId = hasId;
     }
 
+    public Hero() {}
+
     public String getName() {
         return name;
     }

@@ -32,6 +32,7 @@ public class LogInActivity extends ActionBarActivity implements RegisterDialog.R
 
                 if (hd.find(name.getText().toString()) != null) {
                     Intent intent = new Intent(LogInActivity.this, MainActivity.class);
+                    intent.putExtra("user", name.getText().toString());
                     startActivity(intent);
                 } else {
                     Toast.makeText(getApplicationContext(), "Usuário invalido", Toast.LENGTH_SHORT).show();
