@@ -67,6 +67,5 @@ public class LogInActivity extends ActionBarActivity implements RegisterDialog.R
     public void onDialogPositiveClick(String name) {
         Hero h = new Hero(0, name, 0);
         hd.create(h);
-        //Log.d("APPTST", "Saved on DB: " + hd.find(name));
     }
 }

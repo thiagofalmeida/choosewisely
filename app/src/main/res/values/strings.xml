@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Choose Wisely</string>
     <string name="title_activity_about">Como chegamos até aqui</string>
+    <string name="title_activity_message">Mensagens</string>
+    <string name="title_activity_ranking">Ranking dos Mais Poderosos</string>
 
     <!-- menu -->
     <string name="action_register">Entre para a história</string>
@@ -34,7 +36,7 @@
     <!-- adapter -->
     <string name="adapter_name">Thiago Almeida</string>
     <string name="adapter_power">Adapter Power</string>
-    <string name="title_activity_log_in">LogInActivity</string>
+    <string name="title_activity_log_in">Choose Wisely - Login</string>
 
     <!-- login activity -->
     <string name="login">Choose Wisely</string>
@@ -42,5 +44,10 @@
     <string name="login_name">Nome:</string>
     <string name="login_button">Começar</string>
 
-[
+    <!-- Message Activity -->
+    <string name="message_text">Com grandes poderes vem grandes responsabilidades, Peter.</string>
+    <string name="message_author">Uncle Ben.</string>
+
+    <string name="action_ranking">Ranking</string>
+
 </resources>

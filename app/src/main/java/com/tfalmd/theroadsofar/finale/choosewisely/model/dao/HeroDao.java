@@ -26,41 +26,10 @@ public class HeroDao extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("CREATE TABLE heroes (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, hasId INT)");
         db.execSQL("CREATE TABLE powers (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, advantage TEXT, disadvantage TEXT, utility INT, imageFile TEXT)");
+        db.execSQL("CREATE TABLE messages (id INTEGER PRIMARY KEY AUTOINCREMENT, message TEXT, author TEXT, image TEXT)");
 
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnopatia', 'Poderá trocar de canal sem mais precisar do controle remoto', 'Único problema é que seu cerebro pode dar tela azul', 4, 'tecnocinese.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Hidrocinese', 'Se algum dia acontecer um tsunami você estará a salvo', 'Ninguem vai querer namorar alguem que fala com peixes', 3, 'hidrocinese.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Gordura Instantânea', 'Não precisa mais comer obrigado quando sua mãe mandar', 'Terá de fazer mais exercicios', 1, 'gordura.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Invisibilidade Solitária', '**************', '******************', 1, 'alone.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Pirocinese', 'Jamais passará frio', 'Sempre que tentar tomar sorvete você acaba tomando sopa', 3, 'pirocinese.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Absorção de Poderes', 'Poderá ter qual poder quiser', 'Infelizmente não poderá beijar ninguém durante toda sua vida', 5, 'absorcao.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Aderência Física', 'Você agora pode fazer quadradinho de 8 até de cabeça pra baixo', 'Absurdamente aderente', 2, 'aderencia.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Botão Destrutivo', 'Que bosta de poder hein!', 'Vai ter que assistir o mesmo canal eternamente', 1, 'botao.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Lágrimas de Ácido', 'Qual é esse poder é dolorosamente inútil', 'Risque os dramas de sua lista de coisas para assistir', 1, 'choroacido.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Fator de Cura', 'Não precisa mais sofre passando merthiolate nos seus ferimentos', 'Cirurgia plastica no more', 5, 'fatordecura.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Flatulência Quântica', 'Sempre terá lugar para você sentar', 'Não vai mais poder comer feijoada', 1, 'flatulencia.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Gerar Campos de Força', 'Sair na chuva sem se molhar', 'Terá que usar um anel verde ridiculo', 3, 'gerarcampo.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Grito Supersônico', 'Chamar garçons nunca mais será um problema', 'Irão te chamar de sem volume', 2, 'gritosuper.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Ilusionismo', 'Pode ganhar uma grana fazendo truques com baralho pelas ruas', '********************', 4, 'ilusionismo.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Insanidade', 'Passará o resto da vida louco', 'Cuidado com os enfermeiros do hospicio', 2, 'insanidade.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Intangibilidade', 'Agora vai escapar das chineladas da sua mãe like a boss', '**************', 4, 'intangibilidade.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Invisibilidade', '************************', 'Deve ser por isso que ninguém lembra do seu aniversario, nem pelo facebook', 5, 'invisibilidade.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Levitar lado direito do corpo', 'Um feito impressionante', 'Não serve pra porra nenhuma', 2, 'levitardireito.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Supervelocidade', 'Nunca mais vai chegar atrasado no ENEM', 'Terá dificuldades no namoro', 5, 'velocidade.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Petrificação', 'Sempre terá um peso de papel ou de porta a disposição', '**************', 3, 'pretrificacao.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Visão de Raio-X Infinita', 'Completamente inútil', 'Absurdamente inútil', 0, 'raioxeterno.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Superforça', 'Não precisa mais frequentar a academia', 'Cuidado para não explodir o vaso sanitario quando for ao banheiro', 4, 'superforca.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Teletransporte de 8 cm', 'Você pode se teletransportar (:', 'É mais simples você dar um passo', 1, 'teletransporte.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Toque da Morte', 'Não terá problemas em conseguir trabalho em um abatedouro', 'Nunca será chamado para abraços em grupo', 4, 'toquedamorte.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Transmutação Corporal', 'Suas fotos do facebook serão as melhores', 'Pode ter problemas de sexualidade', 5, 'transmutacao.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Viagem entre dimensões', 'Voltar no tempo e impedir o nascimento da Banda Restart', 'Poderá ser comido por um dinossauro', 5, 'viajardimensoes.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Visão de Raio-X', 'Não precisa mais esperar seu exame de raio-x chegar', 'Cuidado para não ver algo desagradável', 4, 'visaoderaiox.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Voar', 'Não vai ficar mais preso em filas no trânsito', 'Seus cabelos nunca estarão arrumados', 5, 'voar.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Telepatia', 'Irá poder ler a mente do professor ou do nerd da sala durante a prova', 'Vai saber que a gatinha que você tá afim na verdade quer seu amigo', 5, 'telepatia.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Mágica', 'Pode fazer aquele coelho sumir no aniversário do seu sobrinho', 'Ninguém vai te levar a serio', 4, 'magica.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Possessão', 'Pode possuir o presidente e aprovar uma lei que libere refrigerante em todos os bebedouros', '*********************', 4, 'seducao.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Soco de Cura', 'Poderá curar seus aliados e descontar a raiva ao mesmo tempo', 'Seus inimigos é que agradecem', 2, 'socodecura.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Onipotência', 'O nome já diz tudo', 'Fala serio né!', 5, 'onipotencia.png')");
-        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Ressucitar Insetos', 'Pode queimar as formigas e traze-las de novo a vida só para poder queima-las novamente', 'Te acusaram de ser o responsável pelas pragas', 2, 'insetos.png')");
+        insertPowers(db);
+        insertMessages(db);
     }
 
     @Override
@@ -104,6 +73,14 @@ public class HeroDao extends SQLiteOpenHelper {
         return result;
     }
 
+    public void update(Hero h) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put("hasId", h.getHasId());
+        db.update("heroes", values, "name = ?", new String[]{String.valueOf(h.getName())});
+        db.close();
+    }
+
     public List<Hero> all() {
         List<Hero> result = new ArrayList<Hero>();
 
@@ -118,5 +95,65 @@ public class HeroDao extends SQLiteOpenHelper {
 
         db.close();
         return result;
+    }
+
+    private void insertPowers(SQLiteDatabase db) {
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Correr de salto alto de um T-Rex', 'Pode visitar o Jurassic Park sem problemas', 'Provavelmente terá calos', 3, 'salto.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Tecnopatia', 'Poderá trocar de canal sem mais precisar do controle remoto', 'Único problema é que seu cerebro pode dar tela azul', 4, 'tecnocinese.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Hidrocinese', 'Se algum dia acontecer um tsunami você estará a salvo', 'Ninguem vai querer namorar alguem que fala com peixes', 3, 'hidrocinese.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Gordura Instantânea', 'Não precisa mais comer obrigado quando sua mãe mandar', 'Terá de fazer mais exercicios', 1, 'gordura.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Invisibilidade Solitária', '**************', '******************', 1, 'alone.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Pirocinese', 'Jamais passará frio', 'Sempre que tentar tomar sorvete você acaba tomando sopa', 3, 'pirocinese.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Absorção de Poderes', 'Poderá ter qual poder quiser', 'Infelizmente não poderá beijar ninguém durante toda sua vida', 5, 'absorcao.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Aderência Física', 'Você agora pode fazer quadradinho de 8 até de cabeça pra baixo', 'Absurdamente aderente', 2, 'aderencia.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Botão Destrutivo', 'Que bosta de poder hein!', 'Vai ter que assistir o mesmo canal eternamente', 1, 'botao.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Lágrimas de Ácido', 'Qual é?! Esse poder é dolorosamente inútil', 'Risque os dramas de sua lista de coisas para assistir', 1, 'choroacido.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Fator de Cura', 'Não precisa mais sofre passando merthiolate nos seus ferimentos', 'Cirurgia plastica no more', 5, 'fatordecura.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Flatulência Quântica', 'Sempre terá lugar para você sentar', 'Não vai mais poder comer feijoada', 1, 'flatulencia.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Gerar Campos de Força', 'Sair na chuva sem se molhar', 'Terá que usar um anel verde ridiculo', 3, 'gerarcampo.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Grito Supersônico', 'Chamar garçons nunca mais será um problema', 'Irão te chamar de sem volume', 2, 'gritosuper.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Ilusionismo', 'Pode ganhar uma grana fazendo truques com baralho pelas ruas', '********************', 4, 'ilusionismo.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Insanidade', 'Passará o resto da vida louco', 'Cuidado com os enfermeiros do hospicio', 2, 'insanidade.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Intangibilidade', 'Agora vai escapar das chineladas da sua mãe like a boss', '**************', 4, 'intangibilidade.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Invisibilidade', '************************', 'Deve ser por isso que ninguém lembra do seu aniversario, nem pelo facebook', 5, 'invisibilidade.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Levitar lado direito do corpo', 'Um feito impressionante', 'Não serve pra porra nenhuma', 2, 'levitardireito.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Supervelocidade', 'Nunca mais vai chegar atrasado no ENEM', 'Terá dificuldades no namoro', 5, 'velocidade.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Petrificação', 'Sempre terá um peso de papel ou de porta a disposição', '**************', 3, 'pretrificacao.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Visão de Raio-X Infinita', 'Completamente inútil', 'Absurdamente inútil', 0, 'raioxeterno.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Superforça', 'Não precisa mais frequentar a academia', 'Cuidado para não explodir o vaso sanitario quando for ao banheiro', 4, 'superforca.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Teletransporte de 8 cm', 'Você pode se teletransportar (:', 'É mais simples você dar um passo', 1, 'teletransporte.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Toque da Morte', 'Não terá problemas em conseguir trabalho em um abatedouro', 'Nunca será chamado para abraços em grupo', 4, 'toquedamorte.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Transmutação Corporal', 'Suas fotos do facebook serão as melhores', 'Pode ter problemas de sexualidade', 5, 'transmutacao.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Viagem entre dimensões', 'Voltar no tempo e impedir o nascimento da Banda Restart', 'Poderá ser comido por um dinossauro', 5, 'viajardimensoes.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Visão de Raio-X', 'Não precisa mais esperar seu exame de raio-x chegar', 'Cuidado para não ver algo desagradável', 4, 'visaoderaiox.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Voar', 'Não vai ficar mais preso em filas no trânsito', 'Seus cabelos nunca estarão arrumados', 5, 'voar.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Telepatia', 'Irá poder ler a mente do professor ou do nerd da sala durante a prova', 'Vai saber que a gatinha que você tá afim na verdade quer seu amigo', 5, 'telepatia.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Mágica', 'Pode fazer aquele coelho sumir no aniversário do seu sobrinho', 'Ninguém vai te levar a serio', 4, 'magica.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Possessão', 'Pode possuir o presidente e aprovar uma lei que libere refrigerante em todos os bebedouros', '*********************', 4, 'seducao.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Soco de Cura', 'Poderá curar seus aliados e descontar a raiva ao mesmo tempo', 'Seus inimigos é que agradecem', 2, 'socodecura.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Onipotência', 'O nome já diz tudo', 'Fala serio né!', 5, 'onipotencia.png')");
+        db.execSQL("INSERT INTO powers (name, advantage, disadvantage, utility, imageFile) VALUES ('Ressucitar Insetos', 'Pode queimar as formigas e traze-las de novo a vida só para poder queima-las novamente', 'Te acusaram de ser o responsável pelas pragas', 2, 'insetos.png')");
+    }
+
+    private void insertMessages(SQLiteDatabase db) {
+        db.execSQL("INSERT INTO messages (message, author, image) VALUES ('Não é quem eu sou por dentro e sim, o que eu faço é que me define.', 'Batman', 'batmanbegins.jpg')");
+        db.execSQL("INSERT INTO messages (message, author, image) VALUES ('Por que caímos? Para aprendermos a nos levantar!', 'Alfred', 'alfred.jpg')");
+        db.execSQL("INSERT INTO messages (message, author, image) VALUES ('O que não nos mata só nos torna mais estranhos.', 'Coringa', 'jokerstrange.jpg')");
+        db.execSQL("INSERT INTO messages (message, author, image) VALUES ('Por que está tão serio?', 'Coringa', 'jokerwhy.png')");
+        db.execSQL("INSERT INTO messages (message, author, image) VALUES ('Ou se morre como herói, ou vive-se o bastante para se tornar o vilão.', 'Harvey Dent', 'duascaras.jpg')");
+        db.execSQL("INSERT INTO messages (message, author, image) VALUES ('Quando você terminar de assistir a maratona de Crepúsculo, então você terá minha permissão para morrer', 'Bane', 'bane.jpg')");
+        db.execSQL("INSERT INTO messages (message, author, image) VALUES ('Eu não vim aqui para te ameaçar, eu vim aqui para te matar!', 'Wilson Fisk', 'kingpin.jpg')");
+        db.execSQL("INSERT INTO messages (message, author, image) VALUES ('Não busco perdão pelo que fiz. Peço perdão pelo que vou fazer', 'Matt Murdock', 'matt.jpg')");
+        db.execSQL("INSERT INTO messages (message, author, image) VALUES ('Não viu isso chegando?', 'Mercúrio', 'quick.jpg')");
+        db.execSQL("INSERT INTO messages (message, author, image) VALUES ('AVENGERS A...', 'Capitão América', 'cap.jpg')");
+        db.execSQL("INSERT INTO messages (message, author, image) VALUES ('Você quer proteger o mundo, mas não quer muda-lo. Existe apenas um caminho para a paz... a sua extinção.', 'Ultron', 'ultron.jpg')");
+        db.execSQL("INSERT INTO messages (message, author, image) VALUES ('Tem que decidir que homem vai se tornar. E seja lá quem ele for... Ele vai mudar o mundo.', 'Jonathan Kent', 'kent.jpg')");
+        db.execSQL("INSERT INTO messages (message, author, image) VALUES ('Você dará às pessoas um ideal pelo qual lutar. Elas hão de correr atrás de você. Vão cambalear, vão cair. Quando For hora, você os ajudará a realizar maravilhas.', 'Jor-El', 'jor.jpg')");
+        db.execSQL("INSERT INTO messages (message, author, image) VALUES ('Diga-me, você sangra? Vai sangrar!', 'BatAffleck', 'bleed.jpg')");
+        db.execSQL("INSERT INTO messages (message, author, image) VALUES ('É assim que começa, a febre, a raiva, a sensação de impotência que torna homens bons, cruéis', 'Alfred', 'affleck.jpg')");
+        db.execSQL("INSERT INTO messages (message, author, image) VALUES ('É o fim. O fim do caminho nos qual os coloquei', 'Tony Stark', 'stark.jpg')");
+        db.execSQL("INSERT INTO messages (message, author, image) VALUES ('Você mexeu com algo que não entende', 'Thor', 'thor.jpg')");
+        db.execSQL("INSERT INTO messages (message, author, image) VALUES ('Não importa quem ganhe ou perca, os problemas sempre aparecem.', 'Nick Fury', 'nick.jpg')");
+        db.execSQL("INSERT INTO messages (message, author, image) VALUES ('Houve um despertar. Voce sentiu?', 'Algum Jedi', 'jedi.jpg')");
     }
 }

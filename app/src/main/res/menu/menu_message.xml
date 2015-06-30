@@ -1,6 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.tfalmd.theroadsofar.finale.choosewisely.MessageActivity">
 
     <item
         android:id="@+id/action_register"
@@ -11,12 +12,6 @@
     <item
         android:id="@+id/action_about"
         android:title="@string/action_about"
-        android:orderInCategory="100"
-        app:showAsAction="never" />
-
-    <item
-        android:id="@+id/action_ranking"
-        android:title="@string/action_ranking"
         android:orderInCategory="100"
         app:showAsAction="never" />
 </menu>
