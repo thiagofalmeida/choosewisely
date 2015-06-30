@@ -1,12 +1,15 @@
 <resources>
+    <!-- activity title -->
     <string name="app_name">Choose Wisely</string>
     <string name="title_activity_about">Como chegamos até aqui</string>
     <string name="title_activity_message">Mensagens</string>
-    <string name="title_activity_ranking">Ranking dos Mais Poderosos</string>
+    <string name="title_activity_ranking">Ranking</string>
 
-    <!-- menu -->
+    <!-- menu action -->
     <string name="action_register">Entre para a história</string>
     <string name="action_about">Sobre</string>
+    <string name="action_ranking">Ranking</string>
+    <string name="action_logout">Sair</string>
 
     <!-- main activity -->
     <string name="choose">Descubra seu poder</string>
@@ -40,18 +43,10 @@
 
     <!-- login activity -->
     <string name="login">Choose Wisely</string>
-    <string name="action_settings">Settings</string>
     <string name="login_name">Nome:</string>
     <string name="login_button">Começar</string>
 
-    <!-- Message Activity -->
+    <!-- message activity -->
     <string name="message_text">Com grandes poderes vem grandes responsabilidades, Peter.</string>
     <string name="message_author">Uncle Ben.</string>
-
-    <string name="action_ranking">Ranking</string>
-    <string name="action_logout">Sair</string>
-
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
 </resources>

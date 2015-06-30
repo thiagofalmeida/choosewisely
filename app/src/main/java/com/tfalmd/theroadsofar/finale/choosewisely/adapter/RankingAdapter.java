@@ -62,10 +62,9 @@ public class RankingAdapter extends BaseAdapter {
         RatingBar rb = (RatingBar) v.findViewById(R.id.rbRanking);
         ImageView thumb = (ImageView) v.findViewById(R.id.ivThumb);
 
-        name.setText(temp.getName());
-
         for(Power p : powers) {
             if (temp.getHasId() == p.getId()) {
+                name.setText(temp.getName());
                 power.setText(p.getName());
                 rb.setRating(p.getUtility());
 
@@ -82,5 +81,4 @@ public class RankingAdapter extends BaseAdapter {
 
         return v;
     }
-
 }

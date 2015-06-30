@@ -30,7 +30,7 @@ public class LogInActivity extends ActionBarActivity implements RegisterDialog.R
             public void onClick(View v) {
                 EditText name = (EditText) findViewById(R.id.etLogin);
 
-                if (hd.find(name.getText().toString()) != null) {
+                if (hd.find(name.getText().toString().toLowerCase()) != null) {
                     Intent intent = new Intent(LogInActivity.this, MainActivity.class);
                     intent.putExtra("user", name.getText().toString());
                     startActivity(intent);

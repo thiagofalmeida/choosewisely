@@ -142,7 +142,7 @@
                 <fragment
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:name="com.tfalmd.theroadsofar.finale.choosewisely.FragmentTalk"
+                    android:name="com.tfalmd.theroadsofar.finale.choosewisely.fragment.FragmentTalk"
                     android:id="@+id/fragment" />
             </LinearLayout>
         </LinearLayout>
