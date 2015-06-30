@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
 
     <item
-        android:id="@+id/action_register"
-        android:title="@string/action_register"
+        android:id="@+id/action_ranking"
+        android:title="@string/action_ranking"
         android:orderInCategory="100"
         app:showAsAction="never" />
 
@@ -15,8 +15,8 @@
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/action_ranking"
-        android:title="@string/action_ranking"
+        android:id="@+id/action_logout"
+        android:title="@string/action_logout"
         android:orderInCategory="100"
         app:showAsAction="never" />
 </menu>

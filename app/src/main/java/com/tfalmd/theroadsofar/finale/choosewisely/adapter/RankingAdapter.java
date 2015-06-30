@@ -1,5 +1,9 @@
 package com.tfalmd.theroadsofar.finale.choosewisely.adapter;
 
+import android.content.Context;
+import android.content.res.AssetManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,20 +16,24 @@ import com.tfalmd.theroadsofar.finale.choosewisely.R;
 import com.tfalmd.theroadsofar.finale.choosewisely.model.Hero;
 import com.tfalmd.theroadsofar.finale.choosewisely.model.Power;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 
 /**
  * Created by tfalmd on 24/06/15.
  */
 public class RankingAdapter extends BaseAdapter {
+    private final Context context;
     private List<Hero> heroes;
     private LayoutInflater inflater;
     private List<Power> powers;
 
-    public RankingAdapter(List<Hero> heroes, List<Power> powers, LayoutInflater inflater) {
+    public RankingAdapter(List<Hero> heroes, List<Power> powers, LayoutInflater inflater, Context context) {
         this.heroes = heroes;
         this.inflater = inflater;
         this.powers = powers;
+        this.context = context;
     }
 
     @Override
@@ -46,7 +54,6 @@ public class RankingAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         Hero temp = heroes.get(position);
-        //Power pTemp = powers.get(position);
 
         View v = inflater.inflate(R.layout.ranking_adapter, null);
 
@@ -57,14 +64,19 @@ public class RankingAdapter extends BaseAdapter {
 
         name.setText(temp.getName());
 
-        //Log.d("TESTANDO", "chegou ate aqui");
-
         for(Power p : powers) {
-            //Log.d("TESTANDO", "LIST VIEW1 " + p.getName());
             if (temp.getHasId() == p.getId()) {
-                //Log.d("TESTANDO", "LIST VIEW2 " + p.getName());
                 power.setText(p.getName());
                 rb.setRating(p.getUtility());
+
+                try {
+                    AssetManager am = context.getAssets();
+                    InputStream is = am.open(p.getImageFile());
+                    Bitmap bm = BitmapFactory.decodeStream(is);
+                    thumb.setImageBitmap(bm);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
 

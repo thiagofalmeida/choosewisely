@@ -49,5 +49,6 @@
     <string name="message_author">Uncle Ben.</string>
 
     <string name="action_ranking">Ranking</string>
+    <string name="action_logout">Sair</string>
 
 </resources>

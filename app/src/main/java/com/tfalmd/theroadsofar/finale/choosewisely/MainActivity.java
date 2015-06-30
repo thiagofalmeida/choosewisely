@@ -95,9 +95,11 @@ public class MainActivity extends ActionBarActivity implements RegisterDialog.Re
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
-            case R.id.action_register:
-                RegisterDialog rd = new RegisterDialog();
-                rd.show(getFragmentManager(), null);
+            case R.id.action_logout:
+                Bundle extras = getIntent().getExtras();
+                extras.putString("user", "");
+                Intent login = new Intent(this, LogInActivity.class);
+                startActivity(login);
                 return true;
             case R.id.action_about:
                 Intent intent = new Intent(MainActivity.this, AboutActivity.class);
@@ -106,6 +108,7 @@ public class MainActivity extends ActionBarActivity implements RegisterDialog.Re
             case R.id.action_ranking:
                 Intent ranking = new Intent(this, RankingActivity.class);
                 startActivity(ranking);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
