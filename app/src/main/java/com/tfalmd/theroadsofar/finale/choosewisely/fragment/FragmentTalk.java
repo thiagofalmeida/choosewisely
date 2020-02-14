@@ -27,12 +27,12 @@ public class FragmentTalk extends Fragment {
 
         Random r = new Random();
 
-        if ((r.nextInt() % 4) == 0) {
+        /*if ((r.nextInt() % 4) == 0) {
             iv.setImageResource(R.drawable.imbatman);
         } else {
             iv.setImageResource(R.drawable.right);
         }
-
+        */
         return v;
     }
 }
